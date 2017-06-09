@@ -22,7 +22,7 @@ export default class BonesJokes extends Component {
       <div onClick={answered ? this.nextJoke : this.answer}>
         <h1>{joke.q}</h1>
         {answered && <h2>{joke.a}</h2>}
-        <cite>~xoxo, bones</cite>
+        <cite>HELLO!</cite>
       </div>
     )
   }
