@@ -94,6 +94,11 @@ passport.deserializeUser(
 )
 
 // require.('passport-local').Strategy => a function we can use as a constructor, that takes in a callback
+// TODO: show that we can pass in
+// const options = {
+//   usernameField: 'email'
+// }
+// difference between Errors and authentication failures
 passport.use(new (require('passport-local').Strategy)(
   (email, password, done) => {
     debug('will authenticate user(email: "%s")', email)
